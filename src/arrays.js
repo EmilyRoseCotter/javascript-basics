@@ -3,7 +3,7 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = array => {
-  return array.toString(',');
+  return array.toString();
 };
 
 const csvStringToArray = string => {
@@ -23,7 +23,7 @@ const removeNthElement = (index, array) => {
 };
 
 const numbersToStrings = numbers => {
-  return numbers.toString().split(',');
+  return numbers.map(number => number.toString());
 };
 
 const uppercaseWordsInArray = strings => {
