@@ -3,11 +3,11 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.toString(',');
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(',');
 };
 
 const addToArray = (element, array) => {
@@ -15,7 +15,7 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
@@ -23,15 +23,20 @@ const removeNthElement = (index, array) => {
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.toString().split(',');
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings.map(element => element.toUpperCase());
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  return strings.map(reverse =>
+    reverse 
+    .split("")
+    .reverse()
+    .join("")
+  );
 };
 
 const onlyEven = numbers => {
