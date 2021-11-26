@@ -19,7 +19,7 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
@@ -40,7 +40,7 @@ const reverseWordsInArray = strings => {
 };
 
 const onlyEven = numbers => {
-  // your code here
+  return numbers.filter(numbers2 => numbers2 % 2 === 0);
 };
 
 const removeNthElement2 = (index, array) => {
