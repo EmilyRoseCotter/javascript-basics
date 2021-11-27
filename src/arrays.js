@@ -44,23 +44,28 @@ const onlyEven = numbers => {
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  let arrays = array.slice();
+  arrays.splice(index, 1);
+  return arrays;
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  let vowelCheck = /^[aeiou]/i;
+   let vowelArray = strings.filter(strings => vowelCheck.test(strings));
+   return vowelArray;
 };
 
 const removeSpaces = string => {
-  // your code here
+  let noSpaceString = string.replace(/ /g, "");
+  return noSpaceString;
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce((a, b) => a + b, 0);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  return strings.sort((a, b) => a.charCodeAt(a.length -1) - b.charCodeAt(b.length -1)); 
 };
 
 module.exports = {
