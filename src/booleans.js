@@ -35,11 +35,11 @@ function isLessThanOrEqualTo(a, b) {
 };
 
 function isOdd(a) {
-  return a % 2 == 1;
+  return a % 2 === 1;
 };
 
 function isEven(a) {
-  return a % 2 == 0;
+  return a % 2 === 0;
 };
 
 function isSquare(a) {
@@ -47,7 +47,7 @@ function isSquare(a) {
 };
 
 function startsWith(char, string) {
-  return string.startsWith("a");
+  return string.startsWith(char);
 };
 
 function containsVowels(string) {
